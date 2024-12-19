@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.idea{
+    animation: 5s party infinite ease;
+    text-shadow: 4px 4px 4px black;
+}
+@keyframes party {
+    0%{
+        text-shadow: 4px 4px 4px white ;
+    }
+    50%{
+        color: black;
+    }
+}
+
+.chisom {
+    animation: chisom 10s infinite ease-in-out;
+    background-size: 200%; /* Ensure smooth gradient movement */
+    background-position: 0%; /* Start from the left */
+    background-image: linear-gradient(120deg, #3b82f6, #000);
+}
+
+@keyframes chisom {
+    0% {
+        background-position: 0%; /* Start gradient from left */
+    }
+    50% {
+        background-position: 150%; /* Move gradient to the right */
+    }
+    100% {
+        background-position: 0%; /* Move gradient back to the left */
+    }
+}
+.blink-cursor {
+    display: inline-block;
+    animation: blink 1s steps(2, start) infinite;
+  }
+  
+  @keyframes blink {
+    to {
+      visibility: hidden;
+    }
+  }
+  .cursor-blink::after {
+    content: '|';
+    animation: blink 0.75s step-end infinite;
+  }
+  
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+  .mary{
+    animation: ease-in-out nana 1s infinite;
+  }    
+  @keyframes nana {
+    0%{
+      color: #eab308;
+      text-shadow: 20px 20px 20px #eab308;
+    }
+    25%{
+      color: #93c5fd;
+      text-shadow: 20px 20px 20px #93c5fd;
+    }
+    50%{
+      color: #3b82f6;
+      text-shadow: 20px 20px 20px #3b82f6;
+    }
+    75%{
+      color: #f97317;
+      text-shadow: 20px 20px 20px #f97317;
+    }
+    100%{
+      color: #93c5fd;
+      text-shadow: 20px 20px 20px #93c5fd;
+    }
+  }
+    
